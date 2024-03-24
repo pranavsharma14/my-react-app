@@ -1,0 +1,34 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.paper {
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid ;
+}
+  
+.avatar {
+    margin: auto;
+    background-color: #f60a0a;
+}
+
+.form-control {
+    margin-bottom: 20px;
+}
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+}
+  
+.checkbox-label {
+    margin-left: 0.5rem; 
+}
+
+
+  
