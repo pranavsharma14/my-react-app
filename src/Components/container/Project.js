@@ -4,6 +4,8 @@ import Tab from '@mui/material/Tab';
 import LoginPage from '../Login/LoginPage';
 import SignupPage from '../Login/SignupPage';
 import { Box, Typography } from '@mui/material';
+import Homepage from './homepage';
+import Axios from '../../axios/Axios';
 
 export default function Project() {
   const [value, setValue] = useState(0);
@@ -19,15 +21,25 @@ export default function Project() {
           onChange={handleChange}
           aria-label="disabled tabs example"
         >
+          <Tab label="Home" />
           <Tab label="Login" />
           <Tab label="Signup" />
+          <Tab label="Axios" />
+
         </Tabs>
       <TabPanel value={value} index={0}>
-        <LoginPage />
+        <Homepage />
       </TabPanel>
       <TabPanel value={value} index={1}>
+        <LoginPage />
+      </TabPanel>
+      <TabPanel value={value} index={2}>
         <SignupPage />
       </TabPanel>
+      <TabPanel value={value} index={3}>
+        <Axios />
+      </TabPanel>
+     
     </div>
   );
 }
